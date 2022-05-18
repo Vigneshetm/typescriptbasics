@@ -1,6 +1,6 @@
 console.log('typescript file');
 class Employee{
-    private id;
+    private id; // private is only access within class
     public empname;
     private dob;
     private department;
@@ -11,7 +11,7 @@ class Employee{
         this.department = de;
         
     }
-    protected details(){
+    protected details(){ // protected only access within class and subclass
         return `ID = ${this.id} Name = ${this.empname} Dob = ${this.dob} Dept = ${this.department}`;
     }
 }

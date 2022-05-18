@@ -10,9 +10,10 @@ const Infiniteloop = (): never => {
     }
 };
 // Infiniteloop();
+Infiniteloop();
 
 errorgenerate('an error is present',1030); 
-console.log(errorgenerate('failed',3903));
+// console.log(errorgenerate('failed',3903));
 
 // Example2
 

@@ -12,6 +12,7 @@ var obj = {
 };
 console.log(obj.result());
 console.log(obj.generateId());
+console.log("This example2 of objectts");
 var obj2 = [
     {
         userId: 1,
@@ -92,11 +93,34 @@ var obj2 = [
         completed: false
     }
 ];
+var arr3 = [];
 obj2.forEach(function (a) {
-    if (a.completed === false) {
-        console.log(a.id);
+    if (a.completed === true) {
+        // console.log(a.id);
+        // let temp = {userId:a.userId,id:a.id,title:a.title};
+        // console.log(temp);
+        arr3.push(a);
+        console.log(arr3);
     }
 });
+console.log(arr3);
+// obj2.forEach(a=>{
+// if(a.completed === false)
+// {
+//     console.log(a.id);
+// }
+// });
+// obj2.forEach(temp(obj2));
+// function temp(a):any{
+//   console.log(a);
+//   for(let i = 0;i<a.length;i++){
+//   console.log('index' +a[i].id);
+//     if(a[i].completed === false)
+//     {
+//         console.log(a.id);
+//     }
+//   }
+// }
 // Example 3
 var userdetails = function (userId, id, title, completed) {
     return { userId: userId, id: id, title: title, completed: completed };
@@ -106,6 +130,6 @@ users.push(userdetails(2, 12, 'fads', false));
 users.push(userdetails(4, 14, 'fads', true));
 users.forEach(function (a) {
     if (a.completed === true) {
-        console.log(a.id);
+        console.log("true" + a.id);
     }
 });
