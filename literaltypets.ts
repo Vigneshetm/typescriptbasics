@@ -68,3 +68,14 @@ b4.addEventListener('click',()=>{
     i2.value = "";
     alert(`Result(Div)=${calculate(v1,v2,'div')}`);
 });
+
+// <types> in ts
+
+function identity<vicky>(arg:vicky): vicky {
+    return arg;
+  }
+  
+//   console.log(identity(23));
+  console.log(identity({flkds:23}));
+
+

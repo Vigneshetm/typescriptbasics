@@ -56,3 +56,9 @@ b4.addEventListener('click', function () {
     i2.value = "";
     alert("Result(Div)=".concat(calculate(v1, v2, 'div')));
 });
+// <types> in ts
+function identity(arg) {
+    return arg;
+}
+//   console.log(identity(23));
+console.log(identity({ flkds: 23 }));
